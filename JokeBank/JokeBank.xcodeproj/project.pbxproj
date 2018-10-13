@@ -13,6 +13,7 @@
 		9063DBB12171247E00D9E23B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9063DBAF2171247E00D9E23B /* LaunchScreen.storyboard */; };
 		9063DBB92171263400D9E23B /* MainTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9063DBB82171263400D9E23B /* MainTableVC.swift */; };
 		9063DBBB2171309F00D9E23B /* JokeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9063DBBA2171309F00D9E23B /* JokeVC.swift */; };
+		9063DBBE21725FD100D9E23B /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9063DBBD21725FD100D9E23B /* Joke.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9063DBB22171247E00D9E23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9063DBB82171263400D9E23B /* MainTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableVC.swift; sourceTree = "<group>"; };
 		9063DBBA2171309F00D9E23B /* JokeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeVC.swift; sourceTree = "<group>"; };
+		9063DBBD21725FD100D9E23B /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				9063DBAD2171247E00D9E23B /* Assets.xcassets */,
 				9063DBAF2171247E00D9E23B /* LaunchScreen.storyboard */,
 				9063DBB22171247E00D9E23B /* Info.plist */,
+				9063DBBD21725FD100D9E23B /* Joke.swift */,
 			);
 			path = JokeBank;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			files = (
 				9063DBB92171263400D9E23B /* MainTableVC.swift in Sources */,
 				9063DBBB2171309F00D9E23B /* JokeVC.swift in Sources */,
+				9063DBBE21725FD100D9E23B /* Joke.swift in Sources */,
 				9063DBA72171247C00D9E23B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,9 @@ import UIKit
 
 class JokeVC: UIViewController {
     
-    var recievedJoke = ""
+    //var recievedJoke = ""
+    var recievedJoke = Joke()
+    
     
     let chickenJokeQ = "Did you hear about the chicken who could only lay eggs in the winter?"
     let chickenJokeA = "She was no spring chicken."
@@ -31,21 +33,23 @@ class JokeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = recievedJoke
-        print(recievedJoke)
+        title = recievedJoke.title
         answerLbl.isHidden = true
         jokeAnswerTxt.isHidden = true
         answerBtn.isEnabled = true
-        
-        if recievedJoke == "Chicken" {
-            jokeQuestionTxt.text = chickenJokeQ
-        } else if recievedJoke == "Walk into a bar ..." {
-            jokeQuestionTxt.text = walkIntoBarJokeQ
-        } else if recievedJoke == "Olives" {
+        /*
+        if recievedJoke.title == "Chicken" {
+            jokeQuestionTxt.text = recievedJoke.question
+        } else if recievedJoke.title == "Walk into a bar ..." {
+            jokeQuestionTxt.text = recievedJoke.question
+        } else if recievedJoke.title == "Olives" {
             jokeQuestionTxt.text = oliveJokeQ
         } else {
             jokeQuestionTxt.text = raceJokeQ
         }
+ */
+        // Since you are using an object now, you can remove if then
+        jokeQuestionTxt.text = recievedJoke.question
     }
     
     @IBAction func showAnswerBtnPressed(_ sender: Any) {
@@ -53,15 +57,18 @@ class JokeVC: UIViewController {
         answerLbl.isHidden = false
         jokeAnswerTxt.isHidden = false
         answerBtn.isHidden = true
-        
-        if recievedJoke == "Chicken" {
+        /*
+        if recievedJoke.title == "Chicken" {
             jokeAnswerTxt.text = chickenJokeA
-        } else if recievedJoke == "Walk into a bar ..." {
+        } else if recievedJoke.title == "Walk into a bar ..." {
             jokeAnswerTxt.text = walkIntoBarJokeA
-        } else if recievedJoke == "Olives" {
+        } else if recievedJoke.title == "Olives" {
             jokeAnswerTxt.text = oliveJokeA
         } else {
             jokeAnswerTxt.text = raceJokeA
         }
+ */
+        // Since you are using an object now, you can remove if then
+        jokeAnswerTxt.text = recievedJoke.answer
     }
 }
